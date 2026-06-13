@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影视搜索-国产影视</title>
+    <meta name="description" content="国产影视搜索页，支持按片名、地区、年份、类型与标签查找高清影视内容。">
+    <meta name="keywords" content="国产影视·免费视频在线观看平台：高清大片与推荐榜-国产好剧推荐,国产,视频,免费,在线观看,高清,影视大全,影视搜索,电影搜索,视频搜索">
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="./index.html" aria-label="国产影视">
+            <span class="brand-mark">影</span>
+            <span class="brand-text">
+                <strong>国产影视</strong>
+                <small>免费视频在线观看平台</small>
+            </span>
+        </a>
+        <nav class="main-nav">
+            <a class="" href="./index.html">首页</a><a class="" href="./categories.html">分类</a><a class="" href="./rankings.html">排行榜</a><a class="active" href="./search.html">搜索</a>
+        </nav>
+        <form class="top-search" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索视频..." autocomplete="off">
+            <button type="submit">搜索</button>
+        </form>
+        <button class="menu-button" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-panel">
+        <form class="mobile-search" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索视频..." autocomplete="off">
+            <button type="submit">搜索</button>
+        </form>
+        <nav><a href="./index.html">首页</a><a href="./categories.html">分类</a><a href="./rankings.html">排行榜</a><a href="./search.html">搜索</a></nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1 id="searchTitle">搜索影视内容</h1>
+            <p>输入片名、地区、年份、类型或标签，快速查找想看的高清影片。</p>
+        </div>
+    </section>
+    <section class="main-section">
+        <div class="container search-results" id="searchResults"></div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <div class="footer-brand"><span>影</span><strong>国产影视</strong></div>
+            <p>国产影视免费视频在线观看平台，主打高清大片与实时推荐榜。提供全面的视频资源点播服务，支持免费观看，更新及时。</p>
+        </div>
+        <div>
+            <h3>快速导航</h3>
+            <a href="./index.html">首页</a>
+            <a href="./categories.html">分类总览</a>
+            <a href="./rankings.html">推荐榜</a>
+            <a href="./search.html">影片搜索</a>
+        </div>
+        <div>
+            <h3>热门分类</h3>
+            <a href="./category-premiere.html">热播大片</a><a href="./category-domestic.html">国产精选</a><a href="./category-suspense.html">悬疑剧场</a><a href="./category-romance.html">爱情家庭</a><a href="./category-action.html">动作冒险</a><a href="./category-asian.html">日韩精选</a><a href="./category-western.html">欧美佳片</a><a href="./category-fantasy.html">动画奇幻</a>
+        </div>
+    </div>
+</footer>
+
+<script src="./assets/search-data.js"></script>
+<script src="./assets/site.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
